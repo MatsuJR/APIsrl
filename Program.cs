@@ -25,9 +25,12 @@ namespace APIsrl
 
             // Configures the Repository dependencies 
             builder.Services.AddScoped<IClientRepository, ClientRepository>();
+            builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+            builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
 
 
-            
+
+
 
             var app = builder.Build();
 

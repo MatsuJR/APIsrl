@@ -15,8 +15,7 @@ namespace APIsrl.Data.Map
             builder.Property(x => x.GrossProfit).IsRequired().HasMaxLength(15);
             builder.Property(x => x.NetProfit).IsRequired().HasMaxLength(15);
             builder.Property(x => x.TotalBudget).IsRequired().HasMaxLength(15);
-            builder.Property(x => x.ServiceDescription).IsRequired().HasMaxLength(200);
-
+            builder.HasOne(x => x.Client);
         }
     }
 }

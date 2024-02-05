@@ -10,7 +10,8 @@
         public double GrossProfit { get; set; }
         public double NetProfit { get; set; }
         public double TotalBudget { get; set; }
-        public ClientModel? Client { get; set; }
+        public int ClientId { get; set; }
+        public virtual ClientModel? Client { get; set; }
 
 
       
